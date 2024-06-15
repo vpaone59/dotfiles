@@ -1,0 +1,17 @@
+[core]
+	editor = \"C:\\Users\\kingo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[user]
+	email = vpaone59@gmail.com
+	name = vinny
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	s = status -s
+	st = status
+	pr = pull --rebase
+	b = branch
+	br = branch -a
+	cm = commit -m
