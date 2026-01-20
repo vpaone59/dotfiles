@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Django Debug",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/REPLACE_THIS_WITH_ENTRY_FILENAME.py",
+            "args": [
+                "runserver",
+                "127.0.0.1:8000"
+            ],
+            "django": true,
+            "autoReload": {
+                "enable": true
+            },
+            "cwd": "${workspaceFolder}/REPLACE_WITH_MAIN_PROJECT_FOLDER",
+            "env": {
+                "DJANGO_SETTINGS_MODULE": "replace_with_project_name.settings"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}
